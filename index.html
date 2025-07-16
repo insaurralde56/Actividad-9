@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📅 Mi Calendario Dinámico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">📅 Mi Calendario Dinámico</h1>
+        
+        <div class="calendar">
+            <div class="calendar__info">
+                <button class="calendar__prev" id="prev-month">◀</button>
+                <div class="calendar__month" id="month">Junio</div>
+                <div class="calendar__year" id="year">2025</div>
+                <button class="calendar__next" id="next-month">▶</button>
+            </div>
+            
+            <div class="calendar-week">
+                <div class="calendar__day calendar__item">Lun</div>
+                <div class="calendar__day calendar__item">Mar</div>
+                <div class="calendar__day calendar__item">Mié</div>
+                <div class="calendar__day calendar__item">Jue</div>
+                <div class="calendar__day calendar__item">Vie</div>
+                <div class="calendar__day calendar__item">Sáb</div>
+                <div class="calendar__day calendar__item">Dom</div>
+            </div>
+            
+            <div class="calendar-days" id="calendar-days">
+                <!-- Los días se agregan dinámicamente -->
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>🎯 Información del Mes</h3>
+            <p id="month-info">Días del mes: 30 | Año bisiesto: No</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
